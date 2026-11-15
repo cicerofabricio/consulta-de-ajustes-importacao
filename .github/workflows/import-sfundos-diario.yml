@@ -5,8 +5,8 @@ on:
     paths:
       - '.github/workflows/import-sfundos-diario.yml'
   schedule:
-    # 09:20 UTC = 06:20 em Brasília, após a rotina de Ajustes das 06h.
-    - cron: '20 9 * * *'
+    - cron: '20 6 * * *'
+      timezone: 'America/Sao_Paulo'
   workflow_dispatch:
 
 permissions:
